@@ -57,11 +57,11 @@ convertBtn.addEventListener("click", () => {
   amount = amount.value;
 
   if (!optionFrom) {
-    let myOptions = selectList[0];
+    let myOptions = Array.from(selectList[0].options);
     optionFrom = myOptions[0].value;
   }
   if (!optionTo) {
-    let myOptions = selectList[1];
+    let myOptions = Array.from(selectList[1].options);
     optionTo = myOptions[0].value;
   }
   console.log(optionTo, optionFrom);
